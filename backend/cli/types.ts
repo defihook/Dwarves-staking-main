@@ -13,7 +13,13 @@ export interface StakedNFT {
 }
 
 export interface UserPool {
-    // 8 + 2456
+    owner: PublicKey,            // 32
+    itemCount: anchor.BN,      // 8
+    items: StakedNFT[],   // 48 * 50
+    rewardTime: anchor.BN,                         // 8
+    pendingReward: anchor.BN,                       // 8
+}
+export interface UserToken {
     owner: PublicKey,            // 32
     itemCount: anchor.BN,      // 8
     items: StakedNFT[],   // 48 * 50
