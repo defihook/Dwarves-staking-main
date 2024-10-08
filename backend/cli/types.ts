@@ -2,8 +2,8 @@ import * as anchor from '@project-serum/anchor';
 import { PublicKey } from '@solana/web3.js';
 
 export interface GlobalPool {
-    lotteryNftCount: anchor.BN,    // 8
-    fixedNftCount: anchor.BN,  // 8
+    lotteryNftCount: anchor.BN,    // 12
+    fixedNftCount: anchor.BN,  // 12
 }
 
 export interface StakedNFT {
