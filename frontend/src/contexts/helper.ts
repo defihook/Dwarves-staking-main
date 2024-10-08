@@ -2,7 +2,6 @@ import { web3 } from '@project-serum/anchor';
 import * as anchor from '@project-serum/anchor';
 import {
     AccountInfo,
-    // Keypair,
     PublicKey,
     SystemProgram,
     SYSVAR_RENT_PUBKEY,
